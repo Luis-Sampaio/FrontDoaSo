@@ -11,7 +11,7 @@ let valorAtualArrecadado = 0; // Valor atual arrecadado da meta
 let valorObjetivo = 0; // Valor objetivo da meta
 
 // Requisição dos dados da meta
-fetch(`http://localhost:3307/api/meta/${metaId}`)
+fetch(`https://backdoaso.onrender.com/api/meta/${metaId}`)
     .then(response => response.json())
     .then(data => {
         // Verifica se o array retornado contém algum item
@@ -46,7 +46,7 @@ fetch(`http://localhost:3307/api/meta/${metaId}`)
             // Busca os dados do Centro
             id_centro_criador = meta.id_centro_criador;
 
-            fetch(`http://localhost:3307/api/centro/${id_centro_criador}`)
+            fetch(`https://backdoaso.onrender.com/api/centro/${id_centro_criador}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.length > 0) {
@@ -84,7 +84,7 @@ function atualizarBarraProgresso(novoValor) {
 // Função para atualizar a meta no backend
 async function atualizarMetaBackend(novoValorArrecadado) {
     try {
-        const response = await fetch(`http://localhost:3307/api/meta/${metaId}`, {
+        const response = await fetch(`https://backdoaso.onrender.com/api/meta/${metaId}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

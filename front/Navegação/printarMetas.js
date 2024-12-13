@@ -35,7 +35,7 @@ function createMetaCard(meta) {
 async function renderMetas() {
     try {
         const metasContainer = document.getElementById("metasContainer");
-        const url = "http://localhost:3307/api/meta";
+        const url = "https://backdoaso.onrender.com/api/meta";
         const metas = await fetch(url, {
             method: "GET",
             headers: {

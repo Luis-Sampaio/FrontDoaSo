@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/proposta/mensagem";
+const url = "https://backdoaso.onrender.com/api/proposta/mensagem";
 
 const MensagemHelper = {
     getMensagemByIdProposta: async function(id){

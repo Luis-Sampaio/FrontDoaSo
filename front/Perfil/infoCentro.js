@@ -20,7 +20,7 @@ function formatarTelefone(numero) {
     }
 }
 //Busca dos dados do centro
-fetch(`http://localhost:3307/api/centro/${centroId}`)
+fetch(`https://backdoaso.onrender.com/api/centro/${centroId}`)
     .then(response => response.json())
     .then(data => {
         // Verifica se o array retornado contém algum item
@@ -45,7 +45,7 @@ fetch(`http://localhost:3307/api/centro/${centroId}`)
     });
 
 // Busca das metas cadastradas que tenham o id_centro_criador == ao id do Centro
-fetch('http://localhost:3307/api/meta/')
+fetch('https://backdoaso.onrender.com/api/meta/')
     .then(response => response.json())
     .then(data => {
         // Filtrar metas pelo id_centro_criador

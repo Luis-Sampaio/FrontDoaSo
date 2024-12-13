@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/notificacao";
+const url = "https://backdoaso.onrender.com/api/notificacao";
 
 const NotificacaoHelper = {
     getNotificacaoByIdUsuario: async function(id){

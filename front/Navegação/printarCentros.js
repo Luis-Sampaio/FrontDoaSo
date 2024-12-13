@@ -28,7 +28,7 @@ function createCentroCard(centro) {
 async function renderCentros() {
     try {
         const centroContainer = document.getElementById("centroContainer");
-        const url = "http://localhost:3307/api/centro";
+        const url = "https://backdoaso.onrender.com/api/centro";
         const centros = await fetch(url, {
             method: "GET",
             headers: {

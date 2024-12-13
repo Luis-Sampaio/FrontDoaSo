@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/meta";
+const url = "https://backdoaso.onrender.com/api/meta";
 
 const MetaHelper = {
     getMeta: async function(){

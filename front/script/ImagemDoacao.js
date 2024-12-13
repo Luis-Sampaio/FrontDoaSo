@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/proposta/imagem";
+const url = "https://backdoaso.onrender.com/api/proposta/imagem";
 
 const ImagemHelper = {
     getImagemByIdProposta: async function(id){

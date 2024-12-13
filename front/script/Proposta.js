@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/proposta";
+const url = "https://backdoaso.onrender.com/api/proposta";
 
 const PropostaHelper = {
     getProposta: async function(){

@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/";
+const url = "https://backdoaso.onrender.com/api/";
 
 const UsuarioHelper = {
     getDoador: async function(){

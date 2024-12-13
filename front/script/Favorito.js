@@ -1,4 +1,4 @@
-const url = "http://localhost:3307/api/favorito";
+const url = "https://backdoaso.onrender.com/api/favorito";
 
 const FavoritoHelper = {
     getFavoritoByIdDoador: async function(idDoador){
